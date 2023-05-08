@@ -15,7 +15,7 @@ The main objectives of this project were:
 To achieve the above objectives, the following steps were taken:
 
 - A `Dockerfile` was created to build and run the application.
-- The application was modified to replace _Hello, World!_ with an optional string set using an environment variable, and defaulting to _Hello, World!_ or _Hello, inalabgroup!_ if the environment variable `APP_NAME` is set to `inalabgroup`.
+- The application was modified to replace _Hello, World!_ with an optional string set using an environment variable, and defaulting to _Hello, World!_.
 - A `docker-compose.yml` file was provided to run the application and set a custom string using an environment variable.
 
 This should result in the ability to navigate to <http://localhost:5000/> and see the custom greeting.
@@ -29,8 +29,18 @@ Note: The SHA256 sum of each file's contents (`<name>`) should match the `<id>`.
 
 ## Reverse Proxy Configuration
 
-A minimal reverse proxy configuration was provided for the application. The Nginx Docker image was used and ran from the same Docker Compose file as the application.
+A minimal reverse proxy configuration was provided for the application using Nginx. The `nginx.conf` file was used and ran from the same Docker Compose file as the application.
 
-## Submittal
+## Files
 
-The solution was pushed to a personal repository on GitHub: https://github.com/jamesnotoma/flask-app-reverse-proxy-InalabUSGS.
+Here's a list of the files in this project:
+
+- `app.py`: the Flask application code
+- `docker-compose.yml`: the Docker Compose configuration file
+- `Dockerfile`: the Dockerfile used to build the Docker image for the application
+- `files/`: a directory where the parsed files are stored
+- `nginx.conf`: the Nginx reverse proxy configuration file
+- `parse_and_create_files.py`: the script to parse the data and create the files
+- `parse_data.py`: the script to retrieve the data from the API
+- `README.md`: the file you're reading right now
+- `requirements.txt`: the Python packages required for the application to run
