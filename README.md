@@ -22,7 +22,10 @@ This should result in the ability to navigate to <http://localhost:5000/> and se
 
 ## Scripting Exercise
 
-A script was provided to parse the data returned from <http://localhost:5000/data> and create a file in a `files/` sub-directory named `<id>.txt` with the _name_ as the contents of the file.
+Two scripts were provided:
+
+- `parse_data.py` retrieves data from <http://localhost:5000/data> and prints the SHA256 sum of the contents.
+- `parse_and_create_files.py` parses the data and creates a file in a `files/` sub-directory named `<id>.txt` with the _name_ as the contents of the file.
 E.g. `files/3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3.txt`
 
 Note: The SHA256 sum of each file's contents (`<name>`) should match the `<id>`.
@@ -33,5 +36,4 @@ A minimal reverse proxy configuration was provided for the application. The Ngin
 
 ## Submittal
 
-The solution was pushed to a personal repository on GitHub: https://github.com/jamesnotoma/flask-app-reverse-proxy-InalabUSGS.
-
+The solution was pushed to a personal repository on GitHub: https://github.com/james_notoma/flask-app-reverse-proxy-InalabUSGS.
