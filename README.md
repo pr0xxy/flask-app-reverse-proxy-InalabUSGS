@@ -22,9 +22,9 @@ This should result in the ability to navigate to http://localhost:5000/ and see 
 
 ## Scripting Exercise
 
-A script was provided to parse the data returned from http://localhost:5000/data and create a file in a files/ sub-directory named <id>.txt with the name as the contents of the file.
+A script was provided to parse the data returned from http://localhost:5000/data and create a file in a `files/` sub-directory named `<id>.txt` with the name as the contents of the file.
 
-Note: The SHA256 sum of each file's contents (<name>) should match the <id>.
+Note: The SHA256 sum of each file's contents (`<name>`) should match the `<id>`.
 
 ## Reverse Proxy Configuration
 
